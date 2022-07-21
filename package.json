@@ -1,0 +1,26 @@
+{
+  "name": "sam",
+  "version": "0.0.0",
+  "description": "automatically detect entity changes and make sequelize migrations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmRoshani/sam.git"
+  },
+  "keywords": [
+    "sequelize",
+    "auto",
+    "migrations",
+    "SQL",
+    "typeScript"
+  ],
+  "author": "MohammadMojtaba Roshani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmRoshani/sam/issues"
+  },
+  "homepage": "https://github.com/mmRoshani/sam#readme"
+}
