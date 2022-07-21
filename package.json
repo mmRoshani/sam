@@ -4,7 +4,11 @@
   "description": "automatically detect entity changes and make sequelize migrations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,14 @@
   "bugs": {
     "url": "https://github.com/mmRoshani/sam/issues"
   },
-  "homepage": "https://github.com/mmRoshani/sam#readme"
+  "homepage": "https://github.com/mmRoshani/sam#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4"
+  }
 }
