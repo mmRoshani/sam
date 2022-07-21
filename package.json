@@ -1,12 +1,17 @@
 {
-  "name": "sam",
+  "name": "@mmroshani/sam",
   "version": "0.0.0",
   "description": "automatically detect entity changes and make sequelize migrations",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
     "prepare": "npm run build",
+    "postversion": "git push && git push --tags",
+    "version": "npm run format && git add -A src",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jestconfig.json"
   },
